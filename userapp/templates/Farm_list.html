@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Farm</title>
+</head>
+<body>
+    <h1>All Farms</h1>
+    <ul>
+        
+       <table>
+        <tr>
+            <th>Farm name</th>
+            <th>type</th>
+        </tr>
+        {% for Farm in Farms %}
+        <tr>
+
+
+            <td>{{Farm.name}}</td>
+            <td>{{ Farm.type}}</td>
+
+
+        </tr>
+        {% endfor %}
+       </table>
+    </ul>
+</body>
+</html>
